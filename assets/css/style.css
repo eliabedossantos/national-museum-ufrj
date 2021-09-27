@@ -1,4 +1,5 @@
 /* ######## GENERAL ######## */
+
 body {
     background: #f4f2ec url(../images/fundo.png) repeat-x;
     font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
@@ -182,7 +183,6 @@ legend {
 
 
 /* ######## FOOTER ######## */
-
 footer {
     clear: both;
     padding: 20px 0 30px 0;
@@ -195,8 +195,9 @@ footer>p a {
 }
 
 
-/* ######## AUTOCONTRASTE ######## */
+/* ######## ACESSIBILIDADE ######## */
 
+/* AUTOCONTRASTE */
 .contrast_preto_branco_amarelo,
 .contrast_preto_branco_amarelo nav,
 .contrast_preto_branco_amarelo div,
@@ -254,13 +255,6 @@ footer>p a {
     filter: grayscale(100%) contrast(120%);
 }
 
-
-/*
-.contrast_preto_branco_amarelo img.on-contrast-force-white {
-    filter: brightness(0) invert(1);
-}
-*/
-
 .contrast_preto_branco_amarelo input[type=text],
 .contrast_preto_branco_amarelo input[type=password],
 .contrast_preto_branco_amarelo input[type=url],
@@ -286,27 +280,29 @@ footer>p a {
 .contrast_preto_branco {
     filter: grayscale(100%) contrast(120%);
 }
-.contrast_preto_branco_invertida{
+
+.contrast_preto_branco_invertida {
     filter: grayscale(100%) contrast(120%) invert(100%);
 }
+
 .contrast_aumentar_contraste {
     filter: contrast(140%);
 }
 
+
+/*
 .font_aumentar_fontex1 {
     font-size: medium;
 }
-.font_aumentar_fontex2{
+.font_aumentar_fontex2 {
     font-size: larger;
 }
-
-/* zoom */
-.zoom1x{
+.zoom1x {
     transform: scale(1.4);
     transform-origin: 0 0;
 }
-.zoom2x{
+.zoom2x {
     transform: scale(1.8);
     transform-origin: 0 0;
 }
-
+*/

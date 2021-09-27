@@ -11,41 +11,44 @@
     <!--[if lt IE 9]>
             <script src="./assets/javascript/html5shiv.js"></script>
         <![endif]-->
-   
+    <script src="./assets/javascript/acessibilidade.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js" defer></script>
+
 </head>
-<body .contrast_preto_branco_amarelo .contrast_inverter_cor .contrast_preto_branco .contrast_preto_branco_invertida .contrast_aumentar_contraste .font_aumentar_fontex1 .font_aumentar_fontex2 .zoom1x .zoom2x>
+
+<body class="acessibilidade">
     <div id="container">
         <!--Start container-->
         <header>
             <div id="logo">
                 <h1><a href="">Museu Nacional</a></h1>
             </div>
-            
+
             <nav>
                 <!--Start nav-->
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Exposições</a>
-                        </li>
-                        <li>
-                            <a href="#">Pesquisas</a>
-                        </li>
-                        <li>
-                            <a href="#">Acervo</a>
-                        </li>
-                        <li>
-                            <a href="#">Vídeos</a>
-                        </li>
-                        <li>
-                            <a href="#">Fotos</a>
-                        </li>
-                        <li>
-                            <a href="#">Institucional</a>
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Exposições</a>
+                    </li>
+                    <li>
+                        <a href="#">Pesquisas</a>
+                    </li>
+                    <li>
+                        <a href="#">Acervo</a>
+                    </li>
+                    <li>
+                        <a href="#">Vídeos</a>
+                    </li>
+                    <li>
+                        <a href="#">Fotos</a>
+                    </li>
+                    <li>
+                        <a href="#">Institucional</a>
+                    </li>
+                </ul>
             </nav>
             <!--//End nav-->
         </header>
@@ -159,26 +162,24 @@
                 <p>
                     <h3>OPÇÕES DE ACESSIBILIDADE</h3>
                     <b>Autocontraste</b><br>
-                    <a href="#altocontraste" id="altocontraste" accesskey="0" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Preto, branco e amarelo</a>
-                    <a href="#altocontraste2" id="altocontraste2" accesskey="1" onclick="window.toggleContrastinverter()" onkeydown="window.toggleContrastinverter()">Cores invertidas</a>
-                    <a href="#altocontraste3" id="altocontraste3" accesskey="2" onclick="window.toggleContrast_preto_branco()" onkeydown="window.toggleContrast_preto_branco()">Monocromático</a> 
-                    <a href="#altocontraste4" id="altocontraste4" accesskey="3" onclick="window.toggleContrast_preto_branco_invertida()" onkeydown="window.toggleContrast_preto_branco_invertida()">Escala de cinza invertida</a> 
-                    <a href="#altocontraste5" id="altocontraste5" accesskey="4" onclick="window.toggleContrast_aumentar_contraste()" onkeydown="window.toggleContrast_aumentar_contraste()">Contraste aumentado</a><br><br>
+                    <a href="#altocontraste" id="contrast_preto_branco_amarelo" onclick="reply_click(this.id)">Preto, branco e amarelo</a>
+                    <a href="#altocontraste2" id="contrast_inverter_cor" onclick="reply_click(this.id)">Cores invertidas</a>
+                    <a href="#altocontraste3" id="contrast_preto_branco" onclick="reply_click(this.id)">Monocromático</a>
+                    <a href="#altocontraste4" id="contrast_preto_branco_invertida" onclick="reply_click(this.id)">Escala de cinza invertida</a>
+                    <a href="#altocontraste5" id="contrast_aumentar_contraste" onclick="reply_click(this.id)">Contraste aumentado</a><br><br>
                     <b>Tamanho do texto</b><br>
-                    <a href="#aumentarfont1" id="aumentarfont1" accesskey="5" onclick="window.toggleFont_aumentar_fontex1()" onkeydown="window.toggleFont_aumentar_fontex1()">Aumentar fonte em 1x</a>
-                    <a href="#aumentarfont2" id="aumentarfont2" accesskey="6" onclick="window.toggleFont_aumentar_fontex2()" onkeydown="window.toggleFont_aumentar_fontex2()">Aumentar fonte em 2x</a><br><br>
+                    <a href="#aumentar_fonte" id="aumentar_fonte" onClick="fonte('a')"><b>A+</b></a>
+                    <a href=" #reduzir_fonte " id="reduzir_fonte" onClick="fonte('d')"><b>A-</b></a><br>
                     <b>Zoom</b><br>
-                    <a href="#aumentarzoom1" id="aumentarzoom1" accesskey="7" onclick="window.toggleZoom_aumentar_zoomx1()" onkeydown="window.toggleZoom_aumentar_zoomx1()">Aumentar zoom em 1x</a>
-                    <a href="#aumentarzoom2" id="aumentarzoom2" accesskey="8" onclick="window.toggleZoom_aumentar_zoomx2()" onkeydown="window.toggleZoom_aumentar_zoomx2()">Aumentar zoom em 2x</a>
-                    
-                    
+                    <a href="#aumentar_zoom" id="aumentar_zoom" onClick="zoom('g')"><b>Zoom+</b></a>
+                    <a href=" #reduzir_zoom" id="reduzir_zoom" onClick="zoom('h')"><b>Zoom-</b></a><br>
                 </p>
             </footer>
         </div>
         <!--//End primary content-->
     </div>
     <!--//End container-->
-    <script src="./assets/javascript/acessibilidade.js"></script>
+
 </body>
 
 </html>
