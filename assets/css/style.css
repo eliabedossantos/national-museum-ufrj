@@ -289,20 +289,3 @@ footer>p a {
     filter: contrast(140%);
 }
 
-
-/*
-.font_aumentar_fontex1 {
-    font-size: medium;
-}
-.font_aumentar_fontex2 {
-    font-size: larger;
-}
-.zoom1x {
-    transform: scale(1.4);
-    transform-origin: 0 0;
-}
-.zoom2x {
-    transform: scale(1.8);
-    transform-origin: 0 0;
-}
-*/

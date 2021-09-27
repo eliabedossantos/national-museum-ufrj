@@ -9,7 +9,7 @@ function reply_click(clicked_id){
 
 //TAMANHO DA FONTE
 function fonte(tam_fonte){
-	var elemento = $(".acessibilidade");
+	var elemento = $("body");
 	var fonte = parseInt(elemento.css('font-size'));
 	var body = $("body");
 	const fonteNormal = parseInt(body.css('font-size'));
@@ -28,7 +28,7 @@ function fonte(tam_fonte){
 //ZOOM
 var x = 0;
 function zoom(zoom_page){
-	var elemento = $(".acessibilidade");
+	var elemento = $("body");
 	var zoom = parseInt(elemento.css('zoom'));
 	var body = $("body");
 	const zoomNormal = parseInt(body.css('zoom'));
