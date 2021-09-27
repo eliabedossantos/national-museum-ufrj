@@ -16,7 +16,7 @@ function fonte(tam_fonte){
 	if (tam_fonte == 'a' && fonte<20) {
 		fonte = fonte+2;
 	}
-	if (tam_fonte == 'd' && fonte>=16){
+	if (tam_fonte == 'd' && fonte>12){
 		fonte = fonte-2;
 	}
 	if (tam_fonte == 'n'){
